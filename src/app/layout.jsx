@@ -1,5 +1,5 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../app/styles/globals.css";
+import yekanFont from "../constants/localFont";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -18,8 +18,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="">{children}</body>
+    <html lang="fa">
+      <body className={`${yekanFont.variable} font-sans min-h-screen`}>
+        {children}
+      </body>
     </html>
   );
 }
