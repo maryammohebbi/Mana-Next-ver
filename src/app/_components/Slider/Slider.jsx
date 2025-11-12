@@ -39,6 +39,7 @@ function Slider() {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
+        initialSlide={2}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -48,6 +49,11 @@ function Slider() {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: "auto" },
+        }}
         className="mySwiper"
       >
         {slideList.map((s) => (
