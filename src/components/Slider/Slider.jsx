@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -16,74 +17,94 @@ const slideList = [
     id: 1,
     src: "/images/m1.png",
     title: "مشاور عالی GIS وزارت نیرو",
+    subTitle: "وزارت نیرو",
     alt: "GIS Counselor",
   },
   {
     id: 2,
     src: "/images/m2.png",
     title: "مشاور توانیر و مجری ژئوپورتال صنعت آب و برق کشور",
+    subTitle: "وزارت نیرو",
     alt: "TAVANIR Counselor",
   },
   {
     id: 3,
     src: "/images/m3.png",
     title: "مجری ژئوپورتال صنعت توزیع، انتقال و فوق توزیع برق و مشاور توانیر",
+    subTitle: "شرکت توانیر",
     alt: "Tavanir Counselors",
   },
   {
     id: 4,
     src: "/images/m4.png",
     title: "مجری ژئوپورتال صنعت توزیع برق",
+    subTitle: "شرکت توانیر",
     alt: "Geo Portal Administrator",
   },
   {
     id: 5,
     src: "/images/m5.png",
     title: "شرکت دانش بنیان",
+    subTitle: "معاونت علمی ریاست جمهوری",
     alt: "Knowledge based company",
   },
   {
     id: 6,
     src: "/images/m6.png",
     title: "عضو کارگروه تخصصی اطلاعات مکانی",
+    subTitle: "وزارت نیرو",
     alt: "Geospatial working group",
   },
-  { id: 7, src: "/images/m7.png", title: "مشاور", alt: "Counselor" },
+  {
+    id: 7,
+    src: "/images/m7.png",
+    title: "مشاور",
+    subTitle: "برق منطقه ای تهران در بیش از 8 شرکت توزیع برق کشور",
+    alt: "Counselor",
+  },
   {
     id: 8,
-    src: "/images/m8.png",
-    title: "مجری نرم افزار",
-    alt: "Software Administrator",
+    src: "/images/m9.png",
+    title: "سرویس Load Management",
+    subTitle:
+      "تهران بزرگ- استان اصفهان- استان مازندران- غرب مازندران در 33 شرکت توزیع برق ",
+    alt: "Tehran, Esfahan, Mazandaran,...",
   },
   {
     id: 9,
-    src: "/images/m9.png",
-    title:
-      "تهران بزرگ- استان اصفهان- استان مازندران- غرب مازندران در 33 شرکت توزیع برق Load management",
-    alt: "Tehran, Esfahan, Mazandaran,...",
+    src: "/images/m8.png",
+    title: "مجری نرم افزار",
+    subTitle:
+      "برق منطقه ای تهران (سامانه مانیتورینگ و پایش بار) در 4 شرکت توزیع برق GIS",
+    alt: "Software Administrator",
   },
+
   {
     id: 10,
     src: "/images/m10.png",
     title: "رتبه 4 سیستم های ویژه",
+    subTitle: "سازمان برنامه و بودجه کشور",
     alt: "Special systems",
   },
   {
     id: 11,
     src: "/images/m11.png",
     title: "رتبه 4 سیستم های نرم افزاری سفارش مشتری",
+    subTitle: "سازمان برنامه و بودجه کشور",
     alt: "Software systems",
   },
   {
     id: 12,
     src: "/images/m12.png",
     title: "رتبه 6 (مشاوره و نظارت بر پروژه های انفورماتیک)",
+    subTitle: "سازمان برنامه و بودجه کشور",
     alt: "Informative projects",
   },
   {
     id: 13,
     src: "/images/m13.png",
     title: "راه اندازی اولین نمونه 3D GIS دینامیک در سطح برقهای منطقه ای",
+    subTitle: "برق منطقه ای تهران",
     alt: "3D GIS",
   },
 ];
@@ -118,8 +139,14 @@ function Slider() {
           <SwiperSlide key={s.id}>
             <div className="relative">
               <div className="w-full h-full bg-black/30 absolute left-0 top-0 flex items-center justify-center">
-                <div className="w-[60%] h-[60%] flex items-center justify-center p-6">
+                <div className="w-[60%] h-[60%] flex flex-col items-center justify-center space-y-4 p-6">
                   <p className="font-bold text-center text-white">{s.title}</p>
+                  <div>
+                    <div className="bg-[#1c9a9aa8] w-6 h-6 relative text-center text-white">
+                      <FmdGoodIcon className="text-white" />
+                    </div>
+                    <span className="text-white">{s.subTitle}</span>
+                  </div>
                 </div>
               </div>
               <Image src={s.src} width={450} height={250} alt={s.alt} />
