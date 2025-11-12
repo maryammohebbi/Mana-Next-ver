@@ -1,5 +1,5 @@
-import Slider from "./_components/Slider/Slider";
-import Header from "./_components/header/Header";
+import Header from "@/components/header/Header";
+import Slider from "@/components/Slider/Slider";
 
 export default function Home() {
   return (

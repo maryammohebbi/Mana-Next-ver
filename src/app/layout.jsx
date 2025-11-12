@@ -1,5 +1,5 @@
-import "../app/styles/globals.css";
-import yekanFont from "../constants/localFont";
+import "@/styles/globals.css";
+import yekanFont from "@/constants/localFont";
 
 export const metadata = {
   title: "اندیشه هوشمند مانا",
