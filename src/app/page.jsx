@@ -1,5 +1,6 @@
 import Certificates from "@/components/certificate/Certificates";
 import Header from "@/components/header/Header";
+import Services from "@/components/services/Services";
 import Slider from "@/components/Slider/Slider";
 import Divider from "@/ui/Divider";
 import WaveBackground from "@/ui/WaveBackground";
@@ -12,7 +13,8 @@ export default function Home() {
         <Slider />
         <Divider />
         <Certificates />
-        <Divider/>
+        <Divider />
+        <Services />
         <WaveBackground />
       </div>
     </div>
