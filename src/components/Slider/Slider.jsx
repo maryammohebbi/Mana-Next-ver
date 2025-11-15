@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 import "./styles.css";
 
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import Image from "next/image";
 import Title from "@/ui/Title";
 
@@ -120,6 +120,10 @@ function Slider() {
         centeredSlides={true}
         slidesPerView={"auto"}
         initialSlide={2}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -128,7 +132,7 @@ function Slider() {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
         breakpoints={{
           0: { slidesPerView: 1 },
           640: { slidesPerView: 2 },
