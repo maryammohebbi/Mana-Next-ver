@@ -13,6 +13,7 @@ function AboutUs() {
             width={500}
             height={500}
             className="w-52 h-24"
+            alt="ohm"
           />
         </div>
         <div className="p-5 flex items-center justify-center">

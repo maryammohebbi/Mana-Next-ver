@@ -12,6 +12,7 @@ function Diagram() {
           width={1000}
           height={1000}
           className="w-[500px] h-[400px]"
+          alt="chart"
         />
       </div>
     </div>
