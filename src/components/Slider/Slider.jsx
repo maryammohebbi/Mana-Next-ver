@@ -11,6 +11,7 @@ import "./styles.css";
 
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import Image from "next/image";
+import Title from "@/ui/Title";
 
 const slideList = [
   {
@@ -112,7 +113,7 @@ const slideList = [
 function Slider() {
   return (
     <div className="mb-8">
-      <h3 className="text-center">چکیده سوابق شرکت اندیشه هوشمند مانا</h3>
+      <Title title="چکیده سوابق شرکت اندیشه هوشمند مانا" />
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -141,7 +142,7 @@ function Slider() {
               <div className="w-full h-full bg-black/30 absolute left-0 top-0 flex items-center justify-center">
                 <div className="w-[60%] h-[60%] flex flex-col items-center justify-center space-y-4 p-6">
                   <p className="font-bold text-center text-white">{s.title}</p>
-                  <div className="flex gap-x-1">
+                  <div className="flex gap-x-2">
                     <div className="icon-box">
                       <FmdGoodIcon className="text-white z-10" />
                     </div>

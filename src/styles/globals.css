@@ -14,6 +14,29 @@ body {
   color: var(--foreground); */
 }
 
+@layer base {
+  :root {
+    /* &, */
+    &.light-mode {
+      --color-primary: #d2ecec;
+      --color-secondary: #000;
+      --color-tertiary: #fff;
+    }
+    &,
+    &.dark-mode {
+      --color-primary: #092744ff;
+      --color-secondary: #fff;
+      --color-tertiary: #0d3b66ff;
+    }
+  }
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-tertiary: var(--color-tertiary);
+}
+
 .icon-box {
   @apply bg-[#1c9a9aa8] w-6 h-6 relative text-center text-white flex items-center justify-center;
 }

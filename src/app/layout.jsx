@@ -9,7 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={`${yekanFont.variable} font-sans min-h-screen`}>
+      <body
+        className={`${yekanFont.variable} font-sans min-h-screen bg-primary`}
+      >
         <div className="flex flex-col h-full">{children}</div>
       </body>
     </html>

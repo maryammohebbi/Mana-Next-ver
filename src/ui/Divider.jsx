@@ -3,7 +3,7 @@ import React from "react";
 
 function Divider() {
   return (
-    <div className="flex items-center justify-center h-4 w-[200px] sm:w-[300px] lg:w-[500px] relative mx-auto">
+    <div className="flex items-center justify-center h-4 w-[200px] sm:w-[300px] lg:w-[500px] relative mx-auto my-12">
       <Image
         src="/images/divider1.png"
         fill
