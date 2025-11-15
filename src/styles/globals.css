@@ -13,3 +13,26 @@ body {
   /* background: var(--background);
   color: var(--foreground); */
 }
+
+.icon-box {
+  @apply bg-[#1c9a9aa8] w-6 h-6 relative text-center text-white flex items-center justify-center;
+}
+
+.icon-box::before,
+.icon-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #1c9a9a89;
+}
+
+.icon-box::before {
+  transform: rotate(30deg);
+}
+
+.icon-box::after {
+  transform: rotate(60deg);
+}

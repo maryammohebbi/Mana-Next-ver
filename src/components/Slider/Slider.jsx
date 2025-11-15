@@ -141,9 +141,9 @@ function Slider() {
               <div className="w-full h-full bg-black/30 absolute left-0 top-0 flex items-center justify-center">
                 <div className="w-[60%] h-[60%] flex flex-col items-center justify-center space-y-4 p-6">
                   <p className="font-bold text-center text-white">{s.title}</p>
-                  <div>
-                    <div className="bg-[#1c9a9aa8] w-6 h-6 relative text-center text-white">
-                      <FmdGoodIcon className="text-white" />
+                  <div className="flex gap-x-1">
+                    <div className="icon-box">
+                      <FmdGoodIcon className="text-white z-10" />
                     </div>
                     <span className="text-white">{s.subTitle}</span>
                   </div>
