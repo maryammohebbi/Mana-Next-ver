@@ -121,7 +121,7 @@ function Slider() {
         slidesPerView={"auto"}
         initialSlide={2}
         autoplay={{
-          delay: 2000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         coverflowEffect={{
