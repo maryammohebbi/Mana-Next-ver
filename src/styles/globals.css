@@ -57,3 +57,31 @@ body {
 .icon-box::after {
   transform: rotate(60deg);
 }
+
+@layer utilities {
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+.animate-float-delay-1 {
+  animation-delay: 0.2s;
+}
+.animate-float-delay-2 {
+  animation-delay: 0.4s;
+}
+.animate-float-delay-3 {
+  animation-delay: 0.7s;
+}

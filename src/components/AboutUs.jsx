@@ -6,8 +6,8 @@ function AboutUs() {
   return (
     <div>
       <Title title="درباره ما" />
-      <div className="flex border border-secondary w-full h-auto lg:h-[200px]">
-        <div className="w-[700px] bg-white items-center justify-center hidden lg:flex">
+      <div className="flex border border-secondary w-full h-auto lg:h-[200px] rounded-md">
+        <div className="w-[700px] bg-white items-center justify-center hidden lg:flex rounded-tr-md rounded-br-md">
           <Image
             src="/images/logo.png"
             width={500}
