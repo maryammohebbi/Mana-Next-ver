@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import Slider from "@/components/Slider/Slider";
 import Divider from "@/ui/Divider";
 import WaveBackground from "@/ui/WaveBackground";
+import WhyUs from "@/components/WhyUs";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         {/* <Diagram /> */}
         <AboutUs />
         <Divider />
+        <WhyUs />
         <WaveBackground />
       </div>
     </div>
