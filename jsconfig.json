@@ -6,7 +6,7 @@
       "@/components/*": ["components/*"],
       // "@/services/*": ["services/*"],
       "@/context/*": ["context/*"],
-      // "@/hooks/*": ["hooks/*"],
+      "@/hooks/*": ["hooks/*"],
       // "@/lib/*": ["lib/*"],
       "@/styles/*": ["styles/*"],
       "@/ui/*": ["ui/*"],
