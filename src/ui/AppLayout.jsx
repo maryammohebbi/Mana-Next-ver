@@ -18,7 +18,7 @@ function AppLayout() {
       <div className="max-w-sm sm:max-w-2xl lg:max-w-7xl mx-auto">
         <Slider />
         <Divider />
-        <Honors />
+        <WhyUs />
         <Divider />
         <Services />
         <Divider />
@@ -26,7 +26,7 @@ function AppLayout() {
         <Divider />
         <KnowledgeBase />
         <Divider />
-        <WhyUs />
+        <Honors />
       </div>
       <Footer />
     </div>

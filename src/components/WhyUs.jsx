@@ -36,7 +36,7 @@ function WhyUs() {
   ];
 
   return (
-    <section id="whyus" className="w-full py-24 bg-tertiary rounded-md mb-20">
+    <section id="whyus" className="w-full py-5 bg-tertiary rounded-md">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         {/* Left Side - Title & Description */}
         <div className="w-full flex flex-col">
@@ -55,7 +55,7 @@ function WhyUs() {
               width={1000}
               height={1000}
               alt="tehran"
-              className="w-full mb-14"
+              className="w-full mb-10"
             />
             <span className="absolute top-8 left-5 animate-float animate-float-delay-1 text-yellow-300">
               <SlLocationPin className="w-8 h-8" />
@@ -83,21 +83,25 @@ function WhyUs() {
           {features.map((f, i) => (
             <div
               key={i}
-              className="flex items-center gap-4 p-6 bg-[#d2ecec] rounded-xl border border-[#1c999a]/20 shadow-sm hover:shadow-md transition-all"
+              className="flex items-center gap-4 p-4 sm:h-20 bg-[#d2ecec] rounded-xl 
+                         border border-[#1c999a]/20 shadow-sm hover:shadow-md transition-all"
             >
               {/* Icon Circle */}
               <div className="w-[10%]">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-[#1c999a] text-[#1c999a] text-xl font-bold">
+                <div
+                  className="flex items-center justify-center w-12 h-12 rounded-full 
+                                border-2 border-[#1c999a] text-[#1c999a] text-xl font-bold"
+                >
                   {f.icon}
                 </div>
               </div>
 
               {/* Text */}
               <div className="w-[90%]">
-                <h3 className="text-lg font-bold text-[#1c999a] mb-1">
-                  {f.title}
-                </h3>
-                <p className="text-gray-700 leading-relaxed">{f.text}</p>
+                <h3 className="font-bold text-[#1c999a] mb-1">{f.title}</h3>
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  {f.text}
+                </p>
               </div>
             </div>
           ))}

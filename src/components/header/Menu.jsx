@@ -5,11 +5,11 @@ import useActiveSection from "@/hooks/useActiveSection";
 function Menu({ mobile = false, onClose }) {
   const sectionIds = [
     "experience",
-    "honors",
+    "whyus",
     "service",
     "aboutus",
     "knowledge",
-    "whyus",
+    "honors",
     "contactus",
   ];
 
@@ -42,11 +42,11 @@ function Menu({ mobile = false, onClose }) {
             }`}
         >
           {id === "experience" && "سوابق ما"}
-          {id === "honors" && "افتخارات"}
+          {id === "whyus" && "چرا ما؟"}
           {id === "service" && "فعالیت ها"}
           {id === "aboutus" && "درباره ما"}
           {id === "knowledge" && "دانش بنیان"}
-          {id === "whyus" && "چرا ما؟"}
+          {id === "honors" && "افتخارات"}
           {id === "contactus" && "تماس با ما"}
         </button>
       ))}
