@@ -2,7 +2,7 @@
 import { useState } from "react";
 import useActiveSection from "@/hooks/useActiveSection";
 
-function Menu() {
+function Menu({ mobile = false, onClose }) {
   const sectionIds = [
     "experience",
     "certificate",
@@ -16,11 +16,19 @@ function Menu() {
 
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+    if (mobile && onClose) onClose(); // close after click
   };
 
   return (
-    <div className="flex gap-4 items-center ">
+    <div
+      className={`
+        flex items-center 
+        ${mobile ? "flex-col gap-3" : "gap-4"}
+      `}
+    >
       {sectionIds.map((id) => (
         <button
           key={id}

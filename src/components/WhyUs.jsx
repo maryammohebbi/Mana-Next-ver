@@ -70,7 +70,7 @@ function WhyUs() {
             </span>
           </div>
           {/* Optional Highlight Box */}
-          <div className="p-6 bg-[#ffeb3b9e] rounded-lg border border-[#ffeb3b] shadow-sm">
+          <div className="p-6 bg-quaternary rounded-lg shadow-sm">
             <p className="text-gray-800 font-semibold">
               تمرکز ما روی ارائه راهکارهای قابل سنجش، نوآورانه و همسو با نیاز
               واقعی صنعت است.
