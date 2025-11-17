@@ -1,85 +1,41 @@
-import React, { useState } from "react";
+"use client";
+import { useState } from "react";
+import useActiveSection from "@/hooks/useActiveSection";
 
 function Menu() {
-  const [activeTab, setActiveTab] = useState(3);
-  const handleTabChange = (tabNumber) => {
-    setActiveTab(tabNumber);
-  };
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+  const sectionIds = [
+    "experience",
+    "certificate",
+    "service",
+    "aboutus",
+    "whyus",
+    "contactus",
+  ];
+
+  const active = useActiveSection(sectionIds);
+
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className="flex">
-      <div>
-        <input
-          type="radio"
-          id="radio-1"
-          name="tabs"
-          checked={activeTab === 1}
-          onChange={() => handleTabChange(1)}
-        />
-        <label
-          className="tab"
-          htmlFor="radio-1"
-          onClick={() => scrollToSection("aboutUsTitle")}
+    <div className="flex gap-4 items-center">
+      {sectionIds.map((id) => (
+        <button
+          key={id}
+          onClick={() => scrollToSection(id)}
+          className={`px-3 py-1 rounded-md transition cursor-pointer
+            ${active === id ? "bg-primary text-white" : "text-gray-700"}`}
         >
-          درباره ما
-        </label>
-      </div>
-
-      <div>
-        <input
-          type="radio"
-          id="radio-2"
-          name="tabs"
-          checked={activeTab === 2}
-          onChange={() => handleTabChange(2)}
-        />
-        <label
-          className="tab"
-          htmlFor="radio-2"
-          onClick={() => scrollToSection("activityTitr")}
-        >
-          فعالیت ها
-        </label>
-      </div>
-      <div>
-        <input
-          type="radio"
-          id="radio-3"
-          name="tabs"
-          checked={activeTab === 3}
-          onChange={() => handleTabChange(3)}
-        />
-        <label
-          className="tab"
-          htmlFor="radio-3"
-          onClick={() => scrollToSection("experienceTitle")}
-        >
-          سوابق ما
-        </label>
-      </div>
-      <div>
-        <input
-          type="radio"
-          id="radio-4"
-          name="tabs"
-          checked={activeTab === 4}
-          onChange={() => handleTabChange(4)}
-        />
-        <label
-          className="tab"
-          htmlFor="radio-4"
-          onClick={() => scrollToSection("experienceTitle")}
-        >
-          تماس با ما
-        </label>
-      </div>
-      <span className=""></span>
+          {id === "experience" && "سوابق ما"}
+          {id === "certificate" && "گواهینامه ها"}
+          {id === "service" && "فعالیت ها"}
+          {id === "aboutus" && "درباره ما"}
+          {id === "whyus" && "چرا ما؟"}
+          {id === "contactus" && "تماس با ما"}
+        </button>
+      ))}
     </div>
   );
 }
