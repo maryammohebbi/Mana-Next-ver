@@ -1,26 +1,28 @@
 "use client";
 
 import useLocalStorageState from "@/hooks/useLocalStorage";
-import { createContext, useContext, useEffect } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const DarkModeContext = createContext();
 
 export function DarkModeProvider({ children }) {
+  const [prefersDark, setPrefersDark] = useState(false);
+
+  // Run on client only
+  useEffect(() => {
+    setPrefersDark(window.matchMedia("(prefers-color-scheme: dark)").matches);
+  }, []);
+
   const [isDarkMode, setIsDarkMode] = useLocalStorageState(
     "isDarkMode",
-    window.matchMedia("(prefers-color-scheme: dark)").matches
+    prefersDark
   );
 
   const toggleDarkMode = () => setIsDarkMode((prev) => !prev);
 
   useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark-mode");
-      document.documentElement.classList.remove("light-mode");
-    } else {
-      document.documentElement.classList.remove("dark-mode");
-      document.documentElement.classList.add("light-mode");
-    }
+    document.documentElement.classList.toggle("dark-mode", isDarkMode);
+    document.documentElement.classList.toggle("light-mode", !isDarkMode);
   }, [isDarkMode]);
 
   return (
@@ -32,8 +34,7 @@ export function DarkModeProvider({ children }) {
 
 export function useDarkMode() {
   const context = useContext(DarkModeContext);
-  if (context === undefined)
-    throw new Error("Darkmode Context is used outside of the provider");
-
+  if (!context)
+    throw new Error("useDarkMode must be used inside DarkModeProvider");
   return context;
 }
