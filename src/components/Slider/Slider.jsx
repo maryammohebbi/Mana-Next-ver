@@ -112,7 +112,7 @@ const slideList = [
 
 function Slider() {
   return (
-    <div className="mb-8">
+    <div className="mb-8" id="experience">
       <Title title="چکیده سوابق شرکت اندیشه هوشمند مانا" />
       <Swiper
         effect={"coverflow"}

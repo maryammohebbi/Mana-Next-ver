@@ -4,7 +4,7 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <div>
+    <div id="aboutus">
       <Title title="درباره ما" />
       <div className="flex border border-secondary w-full h-auto lg:h-[200px] rounded-md">
         <div className="w-[700px] bg-white items-center justify-center hidden lg:flex rounded-tr-md rounded-br-md">

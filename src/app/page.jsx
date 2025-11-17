@@ -14,25 +14,15 @@ export default function Home() {
       <ScrollProgressBar />
       <Header />
       <div className="max-w-sm sm:max-w-2xl lg:max-w-7xl mx-auto">
-        <div id="experience">
-          <Slider />
-        </div>
+        <Slider />
         <Divider />
-        <div id="certificate">
-          <Certificates />
-        </div>
+        <Certificates />
         <Divider />
-        <div id="service">
-          <Services />
-        </div>
+        <Services />
         <Divider />
-        <div id="aboutus">
-          <AboutUs />
-        </div>
+        <AboutUs />
         <Divider />
-        <div id="whyus">
-          <WhyUs />
-        </div>
+        <WhyUs />
         <WaveBackground />
       </div>
     </div>

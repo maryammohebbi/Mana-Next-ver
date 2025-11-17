@@ -28,7 +28,7 @@ function Menu() {
           className={`px-3 py-1 rounded-md transition cursor-pointer
             ${
               active === id
-                ? "bg-tertiary text-secondary border rounded-2xl"
+                ? "bg-quaternary text-secondary border rounded-2xl"
                 : "text-secondary"
             }`}
         >

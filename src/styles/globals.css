@@ -20,11 +20,13 @@ body {
       --color-primary: #d2ecec;
       --color-secondary: #000;
       --color-tertiary: #fff;
+      --color-quaternary: #ffeb3b9e;
     }
     &.dark-mode {
       --color-primary: #092744ff;
       --color-secondary: #fff;
       --color-tertiary: #0d3b66ff;
+      --color-quaternary: #ffeb3b9e;
     }
   }
 }
@@ -33,6 +35,7 @@ body {
   --color-primary: var(--color-primary);
   --color-secondary: var(--color-secondary);
   --color-tertiary: var(--color-tertiary);
+  --color-quaternary: var(--color-quaternary);
 }
 
 .icon-box {

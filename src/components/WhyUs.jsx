@@ -36,7 +36,7 @@ function WhyUs() {
   ];
 
   return (
-    <section className="w-full py-24 bg-tertiary rounded-md">
+    <section id="whyus" className="w-full py-24 bg-tertiary rounded-md">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         {/* Left Side - Title & Description */}
         <div className="w-full flex flex-col">

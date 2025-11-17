@@ -3,7 +3,10 @@ import React from "react";
 
 function Certificates() {
   return (
-    <div className="flex flex-1 w-full justify-center flex-wrap gap-8 mx-auto p-2 text-secondary">
+    <div
+      id="certificate"
+      className="flex flex-1 w-full justify-center flex-wrap gap-8 mx-auto p-2 text-secondary"
+    >
       <div className="w-[500px] flex flex-col items-center justify-center gap-y-5 bg-tertiary p-5 rounded-2xl">
         <Image
           src="/images/sandiky.png"
