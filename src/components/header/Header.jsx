@@ -16,7 +16,6 @@ function Header() {
         className="flex justify-between items-center w-full h-full
                       max-w-sm sm:max-w-2xl lg:max-w-7xl mx-auto p-2"
       >
-        {/* Mobile Hamburger */}
         <button
           onClick={() => setOpen(!open)}
           className="lg:hidden text-3xl text-secondary transition-all duration-500"
@@ -29,7 +28,6 @@ function Header() {
           <Menu />
         </div>
 
-        {/* Logo + toggle */}
         <div className="h-[90%] flex items-center justify-center gap-x-5">
           <ThemeToggle />
           <Image

@@ -8,6 +8,7 @@ function Menu({ mobile = false, onClose }) {
     "certificate",
     "service",
     "aboutus",
+    "knowledge",
     "whyus",
     "contactus",
   ];
@@ -44,6 +45,7 @@ function Menu({ mobile = false, onClose }) {
           {id === "certificate" && "گواهینامه ها"}
           {id === "service" && "فعالیت ها"}
           {id === "aboutus" && "درباره ما"}
+          {id === "knowledge" && "دانش بنیان"}
           {id === "whyus" && "چرا ما؟"}
           {id === "contactus" && "تماس با ما"}
         </button>
