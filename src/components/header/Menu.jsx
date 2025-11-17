@@ -20,13 +20,17 @@ function Menu() {
   };
 
   return (
-    <div className="flex gap-4 items-center">
+    <div className="flex gap-4 items-center ">
       {sectionIds.map((id) => (
         <button
           key={id}
           onClick={() => scrollToSection(id)}
           className={`px-3 py-1 rounded-md transition cursor-pointer
-            ${active === id ? "bg-primary text-white" : "text-gray-700"}`}
+            ${
+              active === id
+                ? "bg-tertiary text-secondary border rounded-2xl"
+                : "text-secondary"
+            }`}
         >
           {id === "experience" && "سوابق ما"}
           {id === "certificate" && "گواهینامه ها"}

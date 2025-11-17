@@ -17,7 +17,7 @@ export default function ScrollProgressBar() {
 
   return (
     <div
-      className="fixed top-0 left-0 h-1 bg-primary z-[9999]"
+      className="fixed top-0 left-0 h-1.5 bg-primary z-[9999]"
       style={{ width: `${scroll}%` }}
     />
   );
