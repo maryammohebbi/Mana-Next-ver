@@ -4,9 +4,10 @@ import Header from "@/components/header/Header";
 import Services from "@/components/Services";
 import Slider from "@/components/Slider/Slider";
 import Divider from "@/ui/Divider";
-import WaveBackground from "@/ui/WaveBackground";
 import WhyUs from "@/components/WhyUs";
 import ScrollProgressBar from "@/ui/ScrollProgressBar";
+import KnowledgeBase from "@/components/KnowledgeBase";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -22,9 +23,11 @@ export default function Home() {
         <Divider />
         <AboutUs />
         <Divider />
+        <KnowledgeBase />
+        <Divider />
         <WhyUs />
-        <WaveBackground />
       </div>
+      <Footer />
     </div>
   );
 }
