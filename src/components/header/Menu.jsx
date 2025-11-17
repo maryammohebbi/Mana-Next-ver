@@ -5,7 +5,7 @@ import useActiveSection from "@/hooks/useActiveSection";
 function Menu({ mobile = false, onClose }) {
   const sectionIds = [
     "experience",
-    "certificate",
+    "honors",
     "service",
     "aboutus",
     "knowledge",
@@ -42,7 +42,7 @@ function Menu({ mobile = false, onClose }) {
             }`}
         >
           {id === "experience" && "سوابق ما"}
-          {id === "certificate" && "گواهینامه ها"}
+          {id === "honors" && "افتخارات"}
           {id === "service" && "فعالیت ها"}
           {id === "aboutus" && "درباره ما"}
           {id === "knowledge" && "دانش بنیان"}

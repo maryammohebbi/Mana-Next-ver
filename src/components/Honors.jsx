@@ -2,10 +2,10 @@ import Title from "@/ui/Title";
 import Image from "next/image";
 import React from "react";
 
-function Certificates() {
+function Honors() {
   return (
-    <div id="certificate">
-      <Title title="گواهینامه ها" />
+    <div id="honors">
+      <Title title="افتخارات" />
       <div className="flex flex-1 w-full justify-center flex-wrap gap-8 mx-auto p-2 text-secondary">
         <div className="w-[500px] flex flex-col items-center justify-center gap-y-5 bg-tertiary p-5 rounded-2xl">
           <Image
@@ -38,4 +38,4 @@ function Certificates() {
   );
 }
 
-export default Certificates;
+export default Honors;

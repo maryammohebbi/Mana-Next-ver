@@ -3,7 +3,10 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="w-full bg-tertiary shadow-lg bottom-0 left-0 right-0 p-5 space-y-8">
+    <div
+      id="contactus"
+      className="w-full bg-tertiary shadow-lg bottom-0 left-0 right-0 p-5 space-y-8"
+    >
       <Image
         src="/images/logo.png"
         width={500}

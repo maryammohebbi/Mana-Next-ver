@@ -1,5 +1,4 @@
 import AboutUs from "@/components/AboutUs";
-import Certificates from "@/components/Certificates";
 import Header from "@/components/header/Header";
 import Services from "@/components/Services";
 import Slider from "@/components/Slider/Slider";
@@ -8,6 +7,7 @@ import WhyUs from "@/components/WhyUs";
 import ScrollProgressBar from "@/ui/ScrollProgressBar";
 import KnowledgeBase from "@/components/KnowledgeBase";
 import Footer from "@/components/Footer";
+import Honors from "@/components/Honors";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <div className="max-w-sm sm:max-w-2xl lg:max-w-7xl mx-auto">
         <Slider />
         <Divider />
-        <Certificates />
+        <Honors />
         <Divider />
         <Services />
         <Divider />

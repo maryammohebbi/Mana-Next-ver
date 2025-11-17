@@ -31,7 +31,7 @@ function Services() {
           <div
             key={service.id}
             className="bg-tertiary w-full lg:w-[30%] h-40 rounded-2xl flex items-center justify-around p-4
-                       hover:scale-105 transition-all duration-500"
+                       hover:scale-105 transition-all duration-500 shadow-lg"
           >
             <div className="border border-secondary rounded-3xl p-2">
               {service.icon}
