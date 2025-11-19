@@ -3,7 +3,7 @@
 import { useDarkMode } from "@/context/DarkModeContext";
 
 function ThemeToggle() {
-  const { isDarkMode, toggleDarkMode } = useDarkMode();
+  const { isDarkMode, toggleDarkMode } = useDarkMode(false);
 
   return (
     <label className="swap swap-rotate">
