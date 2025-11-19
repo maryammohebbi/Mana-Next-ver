@@ -34,10 +34,10 @@ function Menu({ mobile = false, onClose }) {
         <button
           key={id}
           onClick={() => scrollToSection(id)}
-          className={`px-3 py-1 rounded-md transition cursor-pointer
+          className={`px-3 py-1 rounded-md transition-all duration-500 cursor-pointer
             ${
               active === id
-                ? "bg-quaternary text-secondary border rounded-2xl"
+                ? "bg-quaternary text-secondary shadow-xl rounded-2xl"
                 : "text-secondary"
             }`}
         >
