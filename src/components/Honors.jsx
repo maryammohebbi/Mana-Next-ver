@@ -4,7 +4,7 @@ import React from "react";
 
 function Honors() {
   return (
-    <div id="honors" className="mb-20">
+    <div id="honors" className="mb-20 scroll-mt-28">
       <Title title="افتخارات" />
       <div className="flex flex-1 w-full justify-center flex-wrap gap-8 mx-auto p-2 text-secondary">
         <div className="w-[500px] flex flex-col items-center justify-center gap-y-5 bg-tertiary p-5 rounded-2xl">

@@ -24,7 +24,7 @@ const servicesList = [
 
 function Services() {
   return (
-    <div className="p-5" id="service">
+    <div className="p-5 scroll-mt-28" id="service">
       <Title title="فعالیت های شرکت اندیشه هوشمند مانا" />
       <div className="flex flex-col lg:flex-row gap-4 items-center justify-center">
         {servicesList.map((service) => (

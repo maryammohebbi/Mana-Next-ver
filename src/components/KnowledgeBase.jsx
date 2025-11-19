@@ -4,7 +4,7 @@ import React from "react";
 
 function KnowledgeBase() {
   return (
-    <div id="knowledge">
+    <div id="knowledge" className="scroll-mt-28">
       <Title title="دانش بنیان" />
       <div className="flex border border-secondary w-full h-auto lg:h-[200px] rounded-md">
         <div className="p-5 flex items-center justify-center">

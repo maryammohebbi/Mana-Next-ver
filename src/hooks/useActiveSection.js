@@ -2,17 +2,9 @@
 import { useEffect, useState } from "react";
 
 export default function useActiveSection(sectionIds) {
-  const [active, setActive] = useState(sectionIds[0]); // default to first
+  const [active, setActive] = useState(sectionIds[0]);
 
   useEffect(() => {
-    const handleScrollTop = () => {
-      if (window.scrollY < 150) {
-        setActive(sectionIds[0]); // force first item active at top
-      }
-    };
-
-    window.addEventListener("scroll", handleScrollTop);
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -21,19 +13,18 @@ export default function useActiveSection(sectionIds) {
           }
         });
       },
-      { threshold: 0.4 }
+      {
+        rootMargin: "-20% 0px -60% 0px",
+        threshold: 0,
+      }
     );
 
-    // Observe all sections
     sectionIds.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
 
-    return () => {
-      window.removeEventListener("scroll", handleScrollTop);
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, [sectionIds]);
 
   return active;
