@@ -8,7 +8,7 @@ function KnowledgeBase() {
       <Title title="دانش بنیان" />
       <div className="flex border border-secondary w-full h-auto lg:h-[200px] rounded-md">
         <div className="p-5 flex items-center justify-center">
-          <p className="text-secondary text-center">
+          <p className="text-secondary text-justify">
             شرکت اندیشه هوشمند مانا با تکیه بر توان تخصصی، رویکرد نوآورانه و
             فعالیت‌های مبتنی بر تحقیق و توسعه، در زمره شرکت‌های دانش‌بنیان مورد
             تأیید سامانه ارزیابی صلاحیت شرکت‌های دانش‌بنیان قرار گرفته است. این
@@ -26,7 +26,7 @@ function KnowledgeBase() {
             src="/images/knowledge.png"
             width={500}
             height={500}
-            className="w-36 h-24"
+            className="w-32 h-24"
             alt="ohm"
           />
         </div>

@@ -17,7 +17,7 @@ function AboutUs() {
           />
         </div>
         <div className="p-5 flex items-center justify-center">
-          <p className="text-secondary text-center">
+          <p className="text-secondary text-justify">
             شرکت اندیشه هوشمند مانا، یکی از شرکت‌های دانش‌بنیان معتبر و مورد
             تایید سامانه ارزیابی صلاحیت شرکت‌های دانش‌بنیان است. این شرکت در
             کارگروه اطلاعات مکانی وزارت نیرو عضو بوده و همچنین در سندیکای

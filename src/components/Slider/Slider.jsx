@@ -60,7 +60,8 @@ const slideList = [
     id: 7,
     src: "/images/m7.png",
     title: "مشاور",
-    subTitle: "برق منطقه ای تهران در بیش از 8 شرکت توزیع برق کشور",
+    subTitle: "برق منطقه ای تهران ",
+    subTitle2: "در بیش از 8 شرکت توزیع برق کشور",
     alt: "Counselor",
   },
   {
@@ -77,6 +78,8 @@ const slideList = [
     title: "مجری نرم افزار",
     subTitle:
       "برق منطقه ای تهران (سامانه مانیتورینگ و پایش بار) در 4 شرکت توزیع برق GIS",
+    subTitle2: "سامانه Web GIS در 4 شرکت توزیع برق",
+    subTitle3: "سامانه مدیریت اضطراری بار در 33 شرکت توزیع برق",
     alt: "Software Administrator",
   },
 
@@ -97,7 +100,7 @@ const slideList = [
   {
     id: 12,
     src: "/images/m12.png",
-    title: "رتبه 6 (مشاوره و نظارت بر پروژه های انفورماتیک)",
+    title: "رتبه 6 مشاوره و نظارت بر پروژه های انفورماتیک",
     subTitle: "سازمان برنامه و بودجه کشور",
     alt: "Informative projects",
   },
@@ -143,15 +146,28 @@ function Slider() {
         {slideList.map((s) => (
           <SwiperSlide key={s.id}>
             <div className="relative">
-              <div className="w-full h-full bg-black/30 absolute left-0 top-0 flex items-center justify-center">
-                <div className="w-[60%] h-[60%] flex flex-col items-center justify-center space-y-4 p-6">
+              <div className="w-full h-full bg-black/50 absolute left-0 top-0 flex items-center justify-center">
+                <div className="w-[75%] h-[60%] flex flex-col items-start justify-center space-y-4 p-6">
                   <p className="font-bold text-center text-white">{s.title}</p>
-                  <div className="flex gap-x-2">
-                    <div className="icon-box">
-                      <FmdGoodIcon className="text-white z-10" />
-                    </div>
-                    <span className="text-white">{s.subTitle}</span>
-                  </div>
+                  {[
+                    s.subTitle,
+                    s.subTitle2,
+                    s.subTitle3,
+                    s.subTitle4,
+                    s.subTitle5,
+                  ]
+                    .filter(Boolean)
+                    .map((subtitle, index) => (
+                      <div
+                        key={index}
+                        className="flex gap-x-2 text-xs items-center"
+                      >
+                        <div className="icon-box">
+                          <FmdGoodIcon className="w-3 h-3 text-white z-10" />
+                        </div>
+                        <span className="text-white">{subtitle}</span>
+                      </div>
+                    ))}
                 </div>
               </div>
               <Image src={s.src} width={450} height={250} alt={s.alt} />

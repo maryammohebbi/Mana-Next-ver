@@ -16,8 +16,7 @@ function Honors() {
             className="w-[450px] h-[200px] object-contain"
           />
           <p className="text-xs lg:text-sm text-center">
-            عضو سندیکای شرکت‌های شناسایی و مکانیابی رادیویی کشور شرکت ما عضو
-            سندیکای شرکت‌های شناسایی و مکانیابی رادیویی کشور است که ...
+            عضو سندیکای شرکت‌های شناسایی و مکانیابی رادیویی کشور
           </p>
         </div>
         <div className="w-[500px] flex flex-col items-center justify-center gap-y-5 bg-tertiary p-5 rounded-2xl">
@@ -29,8 +28,7 @@ function Honors() {
             className="w-[450px] h-[200px] object-contain"
           />
           <p className="text-xs lg:text-sm text-center">
-            عضو کارگروه اطلاعات مکانی وزارت نیرو شرکت ما جز عضو کار گروه اطلاعات
-            مکانی وزارت نیرو است. این همکاری برای ...
+            عضو کارگروه اطلاعات مکانی وزارت نیرو
           </p>
         </div>
       </div>

@@ -50,7 +50,7 @@ body {
 }
 
 .icon-box {
-  @apply bg-[#1c9a9aa8] w-6 h-6 relative text-center text-white flex items-center justify-center;
+  @apply bg-[#1c9a9aa8] w-5 h-5 relative text-center text-white flex items-center justify-center;
 }
 
 .icon-box::before,
@@ -115,4 +115,9 @@ body {
   .animate-slideDown {
     animation: slideDown 0.2s ease-out;
   }
+}
+
+.tooltip:before {
+  color: var(--color-secondary);
+  background-color: var(--color-quaternary);
 }
