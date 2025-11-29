@@ -49,15 +49,9 @@ const slideList = [
     subTitle: "معاونت علمی ریاست جمهوری",
     alt: "Knowledge based company",
   },
+
   {
     id: 6,
-    src: "/images/m6.png",
-    title: "عضو کارگروه تخصصی اطلاعات مکانی",
-    subTitle: "وزارت نیرو",
-    alt: "Geospatial working group",
-  },
-  {
-    id: 7,
     src: "/images/m7.png",
     title: "مشاور",
     subTitle: "برق منطقه ای تهران ",
@@ -65,47 +59,53 @@ const slideList = [
     alt: "Counselor",
   },
   {
-    id: 8,
-    src: "/images/m9.png",
-    title: "سرویس Load Management",
-    subTitle:
-      "تهران بزرگ- استان اصفهان- استان مازندران- غرب مازندران در 33 شرکت توزیع برق ",
-    alt: "Tehran, Esfahan, Mazandaran,...",
+    id: 7,
+    src: "/images/m6.png",
+    title: "عضو کارگروه تخصصی اطلاعات مکانی",
+    subTitle: "وزارت نیرو",
+    alt: "Geospatial working group",
   },
+  // {
+  //   id: 8,
+  //   src: "/images/m9.png",
+  //   title: "سرویس Load Management",
+  //   subTitle:
+  //     "تهران بزرگ- استان اصفهان- استان مازندران- غرب مازندران در 33 شرکت توزیع برق ",
+  //   alt: "Tehran, Esfahan, Mazandaran,...",
+  // },
   {
-    id: 9,
+    id: 8,
     src: "/images/m8.png",
     title: "مجری نرم افزار",
-    subTitle:
-      "برق منطقه ای تهران (سامانه مانیتورینگ و پایش بار) در 4 شرکت توزیع برق GIS",
+    subTitle: "برق منطقه ای تهران",
     subTitle2: "سامانه Web GIS در 4 شرکت توزیع برق",
     subTitle3: "سامانه مدیریت اضطراری بار در 33 شرکت توزیع برق",
     alt: "Software Administrator",
   },
 
   {
-    id: 10,
+    id: 9,
     src: "/images/m10.png",
     title: "رتبه 4 سیستم های ویژه",
     subTitle: "سازمان برنامه و بودجه کشور",
     alt: "Special systems",
   },
   {
-    id: 11,
+    id: 10,
     src: "/images/m11.png",
     title: "رتبه 4 سیستم های نرم افزاری سفارش مشتری",
     subTitle: "سازمان برنامه و بودجه کشور",
     alt: "Software systems",
   },
   {
-    id: 12,
+    id: 11,
     src: "/images/m12.png",
     title: "رتبه 6 مشاوره و نظارت بر پروژه های انفورماتیک",
     subTitle: "سازمان برنامه و بودجه کشور",
     alt: "Informative projects",
   },
   {
-    id: 13,
+    id: 12,
     src: "/images/m13.png",
     title: "راه اندازی اولین نمونه 3D GIS دینامیک در سطح برقهای منطقه ای",
     subTitle: "برق منطقه ای تهران",
@@ -148,14 +148,10 @@ function Slider() {
             <div className="relative">
               <div className="w-full h-full bg-black/50 absolute left-0 top-0 flex items-center justify-center">
                 <div className="w-[75%] h-[60%] flex flex-col items-start justify-center space-y-4 p-6">
-                  <p className="font-bold text-center text-white">{s.title}</p>
-                  {[
-                    s.subTitle,
-                    s.subTitle2,
-                    s.subTitle3,
-                    s.subTitle4,
-                    s.subTitle5,
-                  ]
+                  <p className="font-bold w-full text-center text-white">
+                    {s.title}
+                  </p>
+                  {[s.subTitle, s.subTitle2, s.subTitle3]
                     .filter(Boolean)
                     .map((subtitle, index) => (
                       <div
@@ -168,6 +164,12 @@ function Slider() {
                         <span className="text-white">{subtitle}</span>
                       </div>
                     ))}
+                  {s.subTitle3 && (
+                    <span className="text-white text-xs mt-1 mr-6 opacity-80">
+                      (تهران بزرگ - استان اصفهان - استان مازندران - غرب مازندران
+                      و ...)
+                    </span>
+                  )}
                 </div>
               </div>
               <Image src={s.src} width={450} height={250} alt={s.alt} />
