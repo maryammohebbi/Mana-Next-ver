@@ -36,6 +36,7 @@ const yekanFont = localFont({
   variable: "--font-yekan",
   style: "normal",
   display: "block",
+  locale: "fa",
 });
 
 export default yekanFont;

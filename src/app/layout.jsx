@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import yekanFont from "@/constants/localFont";
 import { DarkModeProvider } from "@/context/DarkModeContext";
+import PersianDigits from "@/ui/PersianDigits";
 
 export const metadata = {
   title: "اندیشه هوشمند مانا",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <body
           className={`${yekanFont.variable} font-sans min-h-screen bg-primary px-5`}
         >
+          <PersianDigits />
           <div className="flex flex-col h-full">{children}</div>
         </body>
       </html>
