@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
-@plugin "daisyui";
+/* @plugin "daisyui";
+
+@plugin "daisyui" {
+  themes: false;
+} */
+
+@plugin "daisyui" {
+  themes: false;
+}
 
 body {
   margin: 0;
@@ -27,11 +35,18 @@ body {
   }
 }
 
-@theme {
+/* @theme {
   --color-primary: var(--color-primary);
   --color-secondary: var(--color-secondary);
   --color-tertiary: var(--color-tertiary);
   --color-quaternary: var(--color-quaternary);
+} */
+
+@theme {
+  --color-primary: #d2ecec;
+  --color-secondary: #000000;
+  --color-tertiary: #ffffff;
+  --color-quaternary: #ffeb3b9e;
 }
 
 .icon-box {

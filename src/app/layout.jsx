@@ -5,6 +5,9 @@ import { DarkModeProvider } from "@/context/DarkModeContext";
 export const metadata = {
   title: "اندیشه هوشمند مانا",
   description: "شرکت فنی مهندسی دانش بنیان اهم",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
