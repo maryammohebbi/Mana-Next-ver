@@ -12,7 +12,7 @@ const servicesList = [
   },
   {
     id: 2,
-    title: "خدمات مشاور",
+    title: "خدمات مشاوره",
     icon: <RiSpeakAiLine className="w-16 h-16 text-secondary" />,
   },
   {
