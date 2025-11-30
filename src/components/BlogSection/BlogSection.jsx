@@ -11,7 +11,7 @@ function BlogSection() {
         className="flex flex-col lg:flex-row gap-4 items-center justify-center bg-tertiary 
                       w-full h-auto lg:h-[250px] rounded-md p-3"
       >
-        {posts.map((post) => (
+        {posts.slice(-2).map((post) => (
           <PostCard key={post.id} post={post} />
         ))}
       </div>
