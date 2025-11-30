@@ -12,7 +12,8 @@
       "@/ui/*": ["ui/*"],
       "@/utils/*": ["utils/*"],
       // "@/providers/*": ["providers/*"],
-      "@/constants/*": ["constants/*"]
+      "@/constants/*": ["constants/*"],
+      "@/data/*": ["data/*"]
     }
   }
 }

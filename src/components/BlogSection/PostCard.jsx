@@ -1,18 +1,28 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-function PostCard() {
+function PostCard({ post }) {
   return (
-    <div className="w-[99%] lg:w-[49%] h-[90%] border border-secondary rounded-lg flex flex-col lg:flex-row">
-      <div className="w-full h-[100px] lg:w-[250px] lg:h-full rounded-tr-lg rounded-br-lg bg-pink-50"></div>
-      <div className="w-full h-auto lg:flex-1 p-2 rounded-tl-lg rounded-bl-lg bg-green-50">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia harum
-          magni, mollitia, doloremque soluta vitae atque corporis optio iure
-          earum tempore? Odit inventore quasi iusto! Laborum, repudiandae?
-          Sequi, neque labore.
-        </p>
+    <Link
+      href={`/blog/${post.id}`}
+      className="w-[99%] lg:w-[49%] h-[90%] border border-secondary rounded-lg flex flex-col lg:flex-row"
+    >
+      {/* <div className="w-[99%] lg:w-[49%] h-[90%] border border-secondary rounded-lg flex flex-col lg:flex-row"> */}
+      <Image
+        src={post.thumbnail}
+        width={500}
+        height={400}
+        alt={post.title}
+        className="object-cover w-full h-[200px] lg:w-[250px] lg:h-full rounded-lg"
+      />
+      <div className="w-full h-auto lg:flex-1 p-4 space-y-3">
+        <h4 className="font-bold text-lg text-secondary">{post.title}</h4>
+        <p className="text-xs text-secondary">{post.subTitle}</p>
+        <p className="text-sm text-secondary">{post.briefText}</p>
       </div>
-    </div>
+      {/* </div> */}
+    </Link>
   );
 }
 
