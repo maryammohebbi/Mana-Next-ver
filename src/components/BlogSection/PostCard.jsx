@@ -8,7 +8,6 @@ function PostCard({ post }) {
       href={`/blog/${post.id}`}
       className="w-[99%] lg:w-[49%] h-[90%] border border-secondary rounded-lg flex flex-col lg:flex-row"
     >
-      {/* <div className="w-[99%] lg:w-[49%] h-[90%] border border-secondary rounded-lg flex flex-col lg:flex-row"> */}
       <Image
         src={post.thumbnail}
         width={500}
@@ -18,10 +17,9 @@ function PostCard({ post }) {
       />
       <div className="w-full h-auto lg:flex-1 p-4 space-y-3">
         <h4 className="font-bold text-lg text-secondary">{post.title}</h4>
-        <p className="text-xs text-secondary">{post.subTitle}</p>
-        <p className="text-sm text-secondary">{post.briefText}</p>
+        <p className="text-xs text-secondary text-justify">{post.subTitle}</p>
+        <p className="text-sm text-secondary text-justify">{post.briefText}</p>
       </div>
-      {/* </div> */}
     </Link>
   );
 }
