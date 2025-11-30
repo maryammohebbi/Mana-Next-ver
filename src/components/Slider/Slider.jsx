@@ -146,7 +146,7 @@ function Slider() {
         {slideList.map((s) => (
           <SwiperSlide key={s.id}>
             <div className="relative">
-              <div className="w-full h-full bg-black/50 absolute left-0 top-0 flex items-center justify-center">
+              <div className="w-full h-full bg-black/60 absolute left-0 top-0 flex items-center justify-center">
                 <div className="w-[75%] h-[60%] flex flex-col items-start justify-center space-y-4 p-6">
                   <p className="font-bold w-full text-center text-white">
                     {s.title}

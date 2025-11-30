@@ -11,6 +11,7 @@ function Menu({ mobile = false, onClose }) {
     "knowledge",
     "honors",
     // "contactus",
+    "blog",
   ];
 
   const active = useActiveSection(sectionIds);
@@ -48,6 +49,7 @@ function Menu({ mobile = false, onClose }) {
           {id === "knowledge" && "دانش بنیان"}
           {id === "honors" && "افتخارات"}
           {/* {id === "contactus" && "تماس با ما"} */}
+          {id === "blog" && "بلاگ"}
         </button>
       ))}
     </div>

@@ -9,6 +9,7 @@ import AboutUs from "@/components/AboutUs";
 import KnowledgeBase from "@/components/KnowledgeBase";
 import WhyUs from "@/components/WhyUs";
 import Footer from "@/components/Footer";
+import BlogSection from "@/components/BlogSection/BlogSection";
 
 function AppLayout() {
   return (
@@ -27,6 +28,8 @@ function AppLayout() {
         <KnowledgeBase />
         <Divider />
         <Honors />
+        <Divider />
+        <BlogSection />
       </div>
       <Footer />
     </div>
