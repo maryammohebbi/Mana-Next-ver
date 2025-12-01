@@ -19,7 +19,7 @@ function BlogSection() {
         <Link
           href={`/blog`}
           className="text-secondary text-xs w-20 flex gap-x-0.5 items-center 
-                    hover:bg-quaternary p-1 rounded-lg transition-all duration-500"
+                    bg-quaternary p-1 rounded-lg hover:shadow-lg transition-all duration-500"
         >
           دیدن همه
           <BiLeftArrow />
