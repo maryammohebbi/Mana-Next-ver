@@ -1,6 +1,5 @@
 import React from "react";
 import { posts } from "@/data/data";
-import PostCard from "@/components/BlogSection/PostCard";
 import Link from "next/link";
 
 function Blog() {

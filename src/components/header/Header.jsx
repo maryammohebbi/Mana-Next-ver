@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import Menu from "./Menu";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdClose } from "react-icons/md";
+import ThemeLogo from "@/ui/ThemeLogo";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -28,16 +29,7 @@ function Header() {
           <Menu />
         </div>
 
-        <div className="h-[90%] flex items-center justify-center gap-x-5">
-          <ThemeToggle />
-          <Image
-            src="/images/ohm.png"
-            width={1000}
-            height={1000}
-            alt="ohm"
-            className="w-11 h-11"
-          />
-        </div>
+        <ThemeLogo />
       </div>
 
       {/* Mobile Dropdown */}
