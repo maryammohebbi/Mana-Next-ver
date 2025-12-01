@@ -36,7 +36,7 @@ export default async function Post({ params }) {
             width={500}
             height={500}
             alt={post.title}
-            className="w-[250px] h-[200px] md:w-[550px] md:h-[400px] mb-8"
+            className="w-[250px] h-[200px] md:w-[550px] md:h-[400px] mb-12 rounded-lg"
           />
           <p className="text-secondary text-sm text-justify">{post.text}</p>
         </div>
