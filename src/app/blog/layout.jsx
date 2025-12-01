@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import ThemeLogo from "@/ui/ThemeLogo";
 import Link from "next/link";
 import React from "react";
@@ -21,7 +22,8 @@ function layout({ children }) {
           <ThemeLogo />
         </div>
       </div>
-      <div className="flex flex-col items-center">{children}</div>
+      <div className="flex flex-col items-center mb-16">{children}</div>
+      <Footer />
     </div>
   );
 }
