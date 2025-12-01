@@ -24,6 +24,10 @@ function Footer() {
           </p>
         </div>
         <div className="flex gap-x-2">
+          <span className="text-secondary font-bold">کدپستی:</span>
+          <p className="text-secondary">1671678963</p>
+        </div>
+        <div className="flex gap-x-2">
           <span className="text-secondary font-bold">شماره تماس ثابت:</span>
           <p className="text-secondary">22332179 - 021-22525050 </p>
         </div>

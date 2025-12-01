@@ -30,8 +30,14 @@ export default async function Post({ params }) {
           </div>
           <span className="text-xs text-gray-400">نویسنده: {post.author}</span>
         </div>
-        <div>
-          {/* <Image src={post.image} /> */}
+        <div className="flex flex-col items-center">
+          <Image
+            src={post.image}
+            width={500}
+            height={500}
+            alt={post.title}
+            className="w-[250px] h-[200px] md:w-[550px] md:h-[400px] mb-8"
+          />
           <p className="text-secondary text-sm text-justify">{post.text}</p>
         </div>
       </div>
