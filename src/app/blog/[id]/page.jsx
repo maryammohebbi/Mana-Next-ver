@@ -19,11 +19,11 @@ export default async function Post({ params }) {
   }
 
   return (
-    <div className="mx-auto p-5">
+    <div className="mx-auto p-5 min-h-screen">
       <div className="max-w-sm md:max-w-xl lg:max-w-3xl bg-tertiary p-5 shadow-lg rounded-lg">
         <div className="mb-8">
           <div className="flex gap-x-1">
-            <Link href={`/blog`} className="text-xl font-bold  text-secondary">
+            <Link href={`/blog`} className="text-xl font-bold text-secondary">
               بلاگ /{" "}
             </Link>
             <h1 className="text-xl font-bold text-secondary">{post.title}</h1>
