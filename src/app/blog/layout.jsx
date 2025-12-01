@@ -1,9 +1,13 @@
+"use client";
+
 import Footer from "@/components/Footer";
 import ThemeLogo from "@/ui/ThemeLogo";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 function layout({ children }) {
+  const pathname = usePathname();
   return (
     <div>
       <div className="w-full h-20 mb-10 bg-tertiary">
@@ -11,13 +15,24 @@ function layout({ children }) {
           className="flex justify-between items-center w-full h-full
                       max-w-sm sm:max-w-2xl lg:max-w-7xl mx-auto p-2"
         >
-          <div>
-            <Link
-              href={`/`}
-              className="text-secondary px-3 py-1 rounded-xl font-bold transition-all duration-500 hover:bg-quaternary"
-            >
-              خانه
-            </Link>
+          <div className="flex items-center gap-x-2 px-4 h-[80%] bg-primary rounded-xl ">
+            <div>
+              <Link
+                href={`/`}
+                className="text-secondary px-3 py-1 rounded-xl font-bold transition-all duration-500 hover:bg-quaternary"
+              >
+                خانه
+              </Link>
+            </div>
+            <div>
+              <Link
+                href={`/blog`}
+                className={`text-secondary px-3 py-1 rounded-xl font-bold transition-all duration-500 hover:bg-quaternary
+                    ${pathname === "/blog" && "bg-quaternary"}`}
+              >
+                بلاگ
+              </Link>
+            </div>
           </div>
           <ThemeLogo />
         </div>

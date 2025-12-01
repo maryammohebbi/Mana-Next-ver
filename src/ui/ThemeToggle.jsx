@@ -1,9 +1,24 @@
 "use client";
 
 import { useDarkMode } from "@/context/DarkModeContext";
+import { useEffect, useState } from "react";
 
 function ThemeToggle() {
   const { isDarkMode, toggleDarkMode } = useDarkMode(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true); // true only on client
+  }, []);
+
+  // ⛔ Avoid hydration mismatch
+  if (!mounted) {
+    return (
+      <div className="tooltip tooltip-bottom" data-tip="">
+        <div className="h-8 w-8" />
+      </div>
+    );
+  }
 
   return (
     <div
