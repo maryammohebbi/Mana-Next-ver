@@ -26,7 +26,7 @@ function KnowledgeBase() {
             src="/images/knowledge.png"
             width={500}
             height={500}
-            className="w-32 h-24"
+            className="w-24 h-24"
             alt="ohm"
           />
         </div>

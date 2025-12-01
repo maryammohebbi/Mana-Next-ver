@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <DarkModeProvider>
       <html lang="fa" dir="rtl">
         <body
-          className={`${yekanFont.variable} font-sans min-h-screen bg-primary px-5`}
+          className={`${yekanFont.variable} font-sans min-h-screen bg-primary`}
         >
           <PersianDigits />
           <div className="flex flex-col h-full">{children}</div>

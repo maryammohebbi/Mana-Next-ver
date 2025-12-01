@@ -6,7 +6,7 @@ function PostCard({ post }) {
   return (
     <Link
       href={`/blog/${post.id}`}
-      className="w-[99%] lg:w-[49%] h-[90%] border border-secondary rounded-lg flex flex-col lg:flex-row"
+      className="w-[99%] lg:w-[49%] h-[400px lg:h-[270px] xl:h-[200px] border border-secondary rounded-lg flex flex-col lg:flex-row"
     >
       <Image
         src={post.thumbnail}

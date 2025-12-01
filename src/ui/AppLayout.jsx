@@ -16,7 +16,7 @@ function AppLayout() {
     <div>
       <ScrollProgressBar />
       <Header />
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-7xl mx-auto">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-7xl mx-auto px-5">
         <Slider />
         <Divider />
         <WhyUs />

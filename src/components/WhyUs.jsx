@@ -86,7 +86,7 @@ function WhyUs() {
           {features.map((f, i) => (
             <div
               key={i}
-              className="flex items-center gap-4 p-4 sm:h-20 bg-[#d2ecec] rounded-xl 
+              className="flex items-center gap-4 gap-x-7 p-4 sm:h-20 bg-[#d2ecec] rounded-xl 
                          border border-[#1c999a]/20 shadow-sm hover:shadow-md transition-all"
             >
               {/* Icon Circle */}
