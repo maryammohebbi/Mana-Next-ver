@@ -6,9 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
 import "./styles.css";
-
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import Image from "next/image";
 import Title from "@/ui/Title";

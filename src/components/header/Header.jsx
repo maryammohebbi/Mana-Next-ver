@@ -1,7 +1,5 @@
 "use client";
 
-import ThemeToggle from "@/ui/ThemeToggle";
-import Image from "next/image";
 import React, { useState } from "react";
 import Menu from "./Menu";
 import { RxHamburgerMenu } from "react-icons/rx";
